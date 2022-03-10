@@ -6,4 +6,8 @@ const corsConfig = {
     credentials: true,
 };
 
-module.exports = { corsConfig };
+const keys = {
+    backend_api_key: process.env.BACKEND_API_KEY
+};
+
+module.exports = { corsConfig, keys };
